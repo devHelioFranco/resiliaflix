@@ -87,3 +87,47 @@ strong{
     color: black;
     text-align: justify;
 }
+
+@media (max-width:900px) {
+    body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+    #header-nav{
+        flex-direction: column;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #nav-container{
+        flex-direction: column;
+    }
+    #nav-buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .main{
+        width: 100%;
+    }
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards{
+        width: 100%;
+    }
+    .main-container{
+
+        flex-direction: column;
+        
+    }
+    .texto-corpo {
+        width: 80%;
+        text-align: center;
+    }
+}
