@@ -8,6 +8,7 @@ body,html{
     margin: 0px;
     border: 0px;
 }
+/* Estilização de cabeçalho e navBar */
 h5{
     text-align: center;
     color: black;
@@ -38,4 +39,51 @@ header{
     color: black;
     background-color: rgb(250, 208, 0);
     border-radius: 0;
+}
+/* Estilização de descrição do corpo */
+#main{
+    height: 85%;
+}
+
+.texto-main {
+    height: 100%;
+    background-image: url(../img/darkbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-corpo{
+    width: 40%;
+    border-bottom: 10px;
+    border-color: gray;
+}
+.img-corpo{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+strong{
+    color: rgb(250, 208, 0);
+}
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card{
+    border-color: gray;
+    border-radius: 0;
+    width: 30%;
+}
+.card-text{
+    color: black;
+    text-align: justify;
 }
