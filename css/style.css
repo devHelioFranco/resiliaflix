@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body,html{
     color:white;
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     height: 100%;
     width: 100%;
     padding: 0px;
