@@ -100,7 +100,24 @@ strong{
     width: 70%;
     color: black;
 }
-
+.rodape{
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contato{
+    color: rgb(250, 208, 0);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    transition: 1s;
+}
+#contato:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
 @media (max-width:900px) {
     body{
     height: 100%;
@@ -109,8 +126,10 @@ strong{
     margin: 0px;
     border: 0px;
     }
+    
     #header-nav{
         flex-direction: column;
+        position: static;
     }
     #header-container{
         flex-direction: column;
