@@ -88,6 +88,19 @@ strong{
     text-align: justify;
 }
 
+#perguntas{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15%;
+}
+.accordion-item{
+    width: 70%;
+    color: black;
+}
+
 @media (max-width:900px) {
     body{
     height: 100%;
