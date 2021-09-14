@@ -28,3 +28,14 @@ header{
     display: flex;
     padding-bottom: 0;
 }
+#nav-buttons{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    color: black;
+    background-color: rgb(250, 208, 0);
+    border-radius: 0;
+}
