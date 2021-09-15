@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body,html{
+    color:white;
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.main{
+    height: 90%;
+}
+
+#fieldset{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 5px;
+}
+#login{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items:center;
+
+    justify-content:space-evenly;
+}
+#titulo-field{
+    width: 70%;
+    text-align: center;
+}
+.form-group{
+    display: flex;
+    width: 70%;
+}
+.form-control{
+    border-radius: 0%;
+    width: 100%;
+}
+
+
+.rodape{
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+#contato{
+    color: rgb(250, 208, 0);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    transition: 1s;
+}
+#contato:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+@media (max-width:900px) {
+    body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+    
+    #header-nav{
+        flex-direction: column;
+        position: static;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #nav-container{
+        flex-direction: column;
+    }
+    #nav-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    #fieldset{
+        width: 90%;
+    }    
+}
