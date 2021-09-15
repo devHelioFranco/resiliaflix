@@ -4,6 +4,6 @@ entrar.addEventListener('click', function(){
 })
 
 let home = document.getElementById('inscrever')
-entrar.addEventListener('click', function(){
+home.addEventListener('click', function(){
     return location = ('./signup');
 })
