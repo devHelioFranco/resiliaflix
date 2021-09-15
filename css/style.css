@@ -7,6 +7,7 @@ body,html{
     padding: 0px;
     margin: 0px;
     border: 0px;
+    scroll-behavior: smooth;
 }
 /* Estilização de cabeçalho e navBar */
 h5{
