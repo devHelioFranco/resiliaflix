@@ -42,7 +42,10 @@ header{
 }
 /* Estilização de descrição do corpo */
 #main{
-    height: 85%;
+    height: 95%;
+    background-image: url(../img/darkbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .texto-main {
