@@ -77,9 +77,11 @@ body,html{
         flex-direction: column;
     }
     #nav-buttons{
+        display: flex;
         flex-direction: column;
         width: 80%;
     }
-
-    
+    #fieldset{
+        width: 90%;
+    }    
 }
