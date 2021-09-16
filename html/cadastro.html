@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro ResiliaFlix</title>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <!--Navbar e nav-links do cabeçalho-->
+        <nav class="navbar fixed-top" id="header-nav">
+
+            <div class="container-fluid" id="header-container">
+
+                <div id="nav-texto">
+
+                    <a class="navbar-brand" href="#">
+                        <h3 id="nav-title">R e s i l i a f l i x</h3>
+                    </a>
+                </div>
+
+                <div id="nav-buttons">
+                    <button type="button" class="btn btn-outline-warning" id="entrar">Entrar</button>
+                    <button type="button" class="btn btn-outline-warning" id="inscrever">Inscreva-se</button>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- fieldset conteiner geral do forms-->
+        <fieldset class="conteiner-form">
+            <div class="class-titulo">
+                <h1 class="titulo">Incrição</h1>
+            </div>
+            <form class="form-cadastro" id="id-form-cadastro">
+                <!-- fieldset  que agrupa os inputs  de dados pessoais do usuário-->
+                <fieldset class="fieldset-user-data">
+
+                    <label for="id-name">Nome</label>
+                    <input type="text" class="user-data" id="id-name" name="userName" placeholder="Digite seu nome"
+                        required>
+
+                    <label for="id-email">E-mail</label>
+                    <input type="email" class="user-data" id="id-email" name="user-email"
+                        placeholder="example@gmail.com" required>
+
+                    <label for="id-password">Senha</label>
+                    <input type="password" class="user-data" id="id-password" placeholder="Crie sua senha" required>
+
+                    <label for="id-chekPassword">Confirme sua Senha</label>
+                    <input type="password" class="user-data" id="id-chekPassword" placeholder="Repita sua senha"
+                        required>
+
+                    <label for="id-document">Documento de identificação</label>
+                    <input type="text" class="user-data" id="id-document" placeholder="Digite o número do seu documento"
+                        required>
+                </fieldset>
+                <!-- Fieldset para agrupar os dados de endereço do usuario -->
+                <fieldset class="fieldset-endereco">
+                    <!-- Div1 para dividir os campos em colunas no css -->
+                    <div class="linha1">
+
+                        <label for="id-estado">Estado</label>
+                        <input type="text" class="user-endereco" id="id-estado" placeholder="Insira seu estado">
+
+
+                        <label for="id-cidade">Cidade</label>
+                        <input type="text" class="user-endereco" id="id-cidade" placeholder="Digite sua cidade">
+
+                        <label for="id-cep">Cep</label>
+                        <input type="text" class="user-endereco" id="id-cep" placeholder="Digite seu cep" required>
+
+                    </div>
+                    <!-- Div1 para dividir os campos em colunas no css -->
+                    <div class="linha2">
+                        <label for="id-rua">Rua</label>
+                        <input type="text" class="user-endereco" id="id-rua" placeholder="digite o nome sua rua">
+
+                        <label for="id-number">Número</label>
+                        <input type="text" class="user-endereco" id="id-number"
+                            placeholder="Digite o número da sua residência">
+
+                        <label for="id-complemento">Complemento</label>
+                        <input type="text" class="user-endereco" id="id-complemento">
+                    </div>
+
+                </fieldset>
+                <div class="conteiner-btn">
+                    <input class="btn-submit" id="id-submit" type="submit" value="NEXT">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer class="rodape">
+        <br><br><br><br>
+
+    </footer>
+</body>
+
+</html>
