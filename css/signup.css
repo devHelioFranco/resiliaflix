@@ -31,6 +31,15 @@ body,html{
     align-content: space-evenly;
     
 }
+a{
+color:black;
+text-decoration: none;
+text-transform: none;
+}
+a:hover {
+ color: black;
+  }
+
 .btn{
     width: 30%;
 }
