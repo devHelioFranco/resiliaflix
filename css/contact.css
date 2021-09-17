@@ -64,6 +64,7 @@ strong{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: black;
 }
 #contato{
     color: rgb(250, 208, 0);
@@ -98,6 +99,9 @@ strong{
     #nav-buttons{
         flex-direction: column;
         width: 80%;
+    }
+    #main{
+        height: auto;
     }
     .main{
         width: 100%;

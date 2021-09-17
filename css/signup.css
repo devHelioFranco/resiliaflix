@@ -66,13 +66,15 @@ a:hover {
 
 @media (max-width:900px) {
     body{
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 0px;
     margin: 0px;
     border: 0px;
     }
-    
+    .btn{
+        width: 70%;
+    }
     #header-nav{
         flex-direction: column;
         position: static;
@@ -86,9 +88,22 @@ a:hover {
     #nav-buttons{
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 80%;
     }
     #fieldset{
+        height: auto;
         width: 90%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        justify-content: space-evenly;
+    }
+    #login{
+        flex-direction: column;
+        height: 90%;
     }    
+    #submit{
+        margin-top: 10%;
+    }
+    
 }
