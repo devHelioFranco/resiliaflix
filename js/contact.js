@@ -1,6 +1,6 @@
 let entrar = document.getElementById('entrar')
 entrar.addEventListener('click', function(){
-    return location = ('../index.html');
+    return location = ('./login.html');
 })
 
 let home = document.getElementById('inscrever')
