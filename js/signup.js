@@ -1,5 +1,3 @@
-
-
 let entrar = document.getElementById('entrar')
 entrar.addEventListener('click', function(){
     return location = ('../index.html');

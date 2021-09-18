@@ -16,8 +16,9 @@ h5{
     color: black;
 }
 header{
-    height:fit-content;
+    height: min-content;
 }
+
 #header-nav {
     width: 100%;
     background-color: black;
@@ -32,11 +33,17 @@ header{
     padding-bottom: 0;
 }
 #nav-buttons{
-    width: 15%;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
+#pesquisa{
+    display: flex;
 
+}
+#pesquisa-input{
+    border-radius: 0;
+}
 .btn{
     color: black;
     background-color: rgb(250, 208, 0);
@@ -44,87 +51,20 @@ header{
 }
 
 .contentMain{
-    height: 95%;
+    height: 40%;
     background-image: url(../img/darkbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.campoPesquisaFilme {
-    margin: 0 auto;
-    padding: 3% 0;
-    height: 100px;
-}
 
-.campoPesquisaFilme ul {
-    text-align: center;
-    align-content: center;
-    vertical-align: middle;
-
-    /* display: inline-block; */
-    /* width: 30%; */
-    vertical-align: top;
-    margin: 0 33%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-
-}
-
-.campoEmAlta {
-    background-color: rgb(8, 8, 8);
-    padding: 1% 2%;
-    margin: 5% 3% 1% 3%;
-    box-sizing: border-box;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-}
-
-#emAlta {
-    color: rgb(250, 208, 0);
-    font-weight: bold;
-    text-align: center;
-    font-size: 115%;
-    padding: 1% 2% 1% 2%;
-}
-
-.poster {
-    width: 25%;
-    filter: grayscale(100%);
-    transition: 1s all;
-}
-
-.poster:hover {
-    filter: none;
-    transition: 1s all;
-}
-
-
-/* As coisas do footer */
-#perguntas{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5%;
-
-    box-sizing: border-box;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-}
-.accordion-item{
-    width: 70%;
-    color: black;
-}
 .rodape{
-    margin: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
     height: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: black;
 }
 #contato{
     color: rgb(250, 208, 0);
@@ -138,3 +78,99 @@ header{
     transform: scale(1.2);
     transition: 1s;
 }
+.filme_lista{
+    display: flex !important;
+    justify-content: space-around;
+    padding: 0;
+}
+.list-content{
+    height: 50%;
+}
+
+/* só doidera */
+
+  
+ 
+  .btn-outline-success:hover {
+    background-color: #212f45;
+  }
+  
+  .btn-custom-round {
+    padding: 5px 9px !important;
+  }
+  
+  .list-content {
+    margin-top: 5%;
+  }
+  
+  .filme_lista {
+    list-style: none;
+    display: block;
+    border: 1px solid transparent;
+  }
+  
+  .filme {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+    background-size: cover;
+  }
+  
+  .filme:hover {
+    transform: scale(1.15);
+    z-index: 999;
+    transition: 0.5s;
+  }
+  
+  .filme:hover .filme_info {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  
+  .filme:first-child {
+    margin-left: 70px;
+  }
+  
+  .col-12 {
+    text-align: center;
+  }
+  
+  .filme_info {
+    background-color: #171717;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    transform: scale(0);
+  }
+  
+  .filme_info .col-12 {
+    margin-top: 5px;
+  }
+  
+  .filme_info .col12:first-child {
+    margin-bottom: 20px;
+  }
+  
+  .filme_info p {
+    color: #7e7b7b;
+    font-size: 12px;
+  }
+  
+  section {
+    margin-bottom: -100px;
+    position: relative;
+    width: 100%;
+  }
+  
+  section:hover {
+    z-index: 9;
+  }
+
+  .img-fluid{
+    height: 250px;
+    width: 250px;
+  }
