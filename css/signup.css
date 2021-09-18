@@ -52,6 +52,9 @@ a:hover {
   align-items: center;
   background-color: black;
 }
+.bloqueado{
+  background-color: rgb(160, 160, 160) !important;
+}
 #contato {
   color: rgb(250, 208, 0);
   font-size: 20px;
