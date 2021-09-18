@@ -9,11 +9,6 @@ body,html{
     border: 0px;
     scroll-behavior: smooth;
 }
-/* Estilização de cabeçalho e navBar */
-h5{
-    text-align: center;
-    color: black;
-}
 header{
     height:fit-content;
 }
@@ -21,95 +16,55 @@ header{
     width: 100%;
     background-color: black;
 }
-#nav-title{
-    color:rgb(250, 208, 0);
-    font-family: 'Bebas Neue', cursive;
-    align-self: center;
-}
 #nav-texto{
     display: flex;
-    padding-bottom: 0;
 }
-#nav-buttons{
-    width: 15%;
+#nav-title{
+    text-decoration: none;
+    color:rgb(250, 208, 0);
+    font-family: 'Bebas Neue', cursive;
+}
+.nav-buttons{
+    text-decoration: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    width: 15%;
 }
-
 .btn{
     color: black;
     background-color: rgb(250, 208, 0);
     border-radius: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
 }
-/* Estilização de descrição do corpo */
 #main{
     height: 95%;
-    background-image: url(../img/darkbg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.texto-main {
-    height: 100%;
-    background-image: url(../img/darkbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .main-container{
     height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
+    
 }
-.texto-corpo{
-    width: 40%;
-    border-bottom: 10px;
-    border-color: gray;
-}
-.img-corpo{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
+.menuEquipe{
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(250, 208, 0);
+    text-align: center;
+    padding: 10px;
 }
 strong{
     color: rgb(250, 208, 0);
-}
-.container-cards{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-.card{
-    border-color: gray;
-    border-radius: 0;
-    width: 30%;
-}
-.card-text{
-    color: black;
-    text-align: justify;
-}
-
-#perguntas{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 15%;
-}
-.accordion-item{
-    width: 70%;
-    color: black;
 }
 .rodape{
     height: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    background-color: black;
 }
 #contato{
     color: rgb(250, 208, 0);
@@ -131,7 +86,6 @@ strong{
     margin: 0px;
     border: 0px;
     }
-    
     #header-nav{
         flex-direction: column;
         position: static;
@@ -146,25 +100,16 @@ strong{
         flex-direction: column;
         width: 80%;
     }
-
+    #main{
+        height: auto;
+    }
     .main{
         width: 100%;
     }
-    .container-cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .cards{
-        width: 100%;
-    }
     .main-container{
-
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
-    .texto-corpo {
-        width: 80%;
-        text-align: center;
+    .menuEquipe{
+        flex-direction: column;
     }
 }
