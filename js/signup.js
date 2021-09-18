@@ -50,4 +50,5 @@ $("#submit").click(function(){
     $(".form-group").css('display', 'none')
     $("#submit").css('display', 'none')
     $("#titulo-field").css('display', 'none')
+    $("body").css('height', '100%')
 });

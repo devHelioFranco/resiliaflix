@@ -7,3 +7,35 @@ let home = document.getElementById('inscrever')
 home.addEventListener('click', function(){
     return location = ('./signup.html');
 })
+
+
+let login
+let senha
+
+const load = () => {
+    const email = localStorage.getItem('email');
+    login = email
+    const password = localStorage.getItem('senha')
+    senha = password
+} 
+window.onload = () => {
+    load();
+}
+
+const botao = document.getElementById('sub')
+botao.addEventListener('click',()=>{
+    
+    let inputLogin = document.getElementById('exampleInputEmail1').value 
+    let inputPassword = document.getElementById('exampleInputPassword1').value
+    try {
+
+        if(login == inputLogin && senha == inputPassword){
+
+            return location = ("./content.html")
+        } else {
+            throw new Error ('Login e Senha inválidos, tente novamente')
+        }
+    } catch (error){
+        $('#titulo').html(`${error}`)
+    }
+})
