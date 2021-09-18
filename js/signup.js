@@ -21,12 +21,12 @@ const salva2 = () => {
 }
 
 let email = document.getElementById('exampleInputEmail1')
-let cadastro = document.getElementById('submit')
+let cadastro = document.getElementById('login')
 var usuario
 let senha = document.getElementById('inputPassword1')
 var password 
 
-cadastro.addEventListener('click', ()=>{
+cadastro.addEventListener('change', ()=>{
     usuario = email.value
     password = senha.value
     salva()
@@ -44,3 +44,10 @@ $('#meuCep').on('change', async function(){
    $('#bairro').val(`${apiResponse.bairro}`)
    $('#rua').val(`${apiResponse.logradouro}`)
 })
+
+$("#submit").click(function(){
+    $("#concluido").css('display', 'block')
+    $(".form-group").css('display', 'none')
+    $("#submit").css('display', 'none')
+    $("#titulo-field").css('display', 'none')
+});

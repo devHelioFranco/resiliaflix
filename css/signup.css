@@ -67,7 +67,10 @@ a:hover {
   transform: scale(1.2);
   transition: 1s;
 }
-
+#concluido{
+  display: none;
+  text-align: center;
+}
 @media (max-width: 900px) {
   body {
     height: auto;
@@ -79,6 +82,7 @@ a:hover {
   .btn {
     width: 70%;
   }
+  
   #header-nav {
     flex-direction: column;
     position: static;
