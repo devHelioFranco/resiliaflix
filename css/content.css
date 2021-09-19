@@ -33,7 +33,7 @@ header{
     padding-bottom: 0;
 }
 #nav-buttons{
-    width: 30%;
+    width: 35%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -173,4 +173,6 @@ header{
   .img-fluid{
     height: 250px;
     width: 250px;
+    -webkit-box-shadow: 7px 8px 4px -1px rgba(250,208,0,0.63); 
+box-shadow: 7px 8px 4px -1px rgba(250,208,0,0.63);
   }
