@@ -11,12 +11,15 @@ home.addEventListener('click', function(){
 
 let login
 let senha
+let input
 
 const load = () => {
     const email = localStorage.getItem('email');
     login = email
     const password = localStorage.getItem('senha')
     senha = password
+    const nome = localStorage.getItem('nome')
+    input = nome
 } 
 window.onload = () => {
     load();

@@ -11,24 +11,33 @@ inscrever.addEventListener('click', function(){
 
 
 
+
 const salva = () => {
     localStorage.setItem('email', usuario);
 }
 const salva2 = () => {
     localStorage.setItem('senha', password);
 }
+const salva3 = () => {
+    localStorage.setItem('nome', nomeInput);
+}
 
+
+let nome = document.getElementById('exampleInputName')
 let email = document.getElementById('exampleInputEmail1')
 let cadastro = document.getElementById('login')
 var usuario
 let senha = document.getElementById('inputPassword1')
 var password 
+var nomeInput
 
 cadastro.addEventListener('change', ()=>{
+    nomeInput = nome.value
     usuario = email.value
     password = senha.value
     salva()
     salva2()
+    salva3()
     console.log('foi')
 })
 

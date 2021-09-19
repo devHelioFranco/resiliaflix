@@ -33,7 +33,7 @@ header{
     padding-bottom: 0;
 }
 #nav-buttons{
-    width: 30%;
+    width: 35%;
     display: flex;
     justify-content: space-evenly;
 }
