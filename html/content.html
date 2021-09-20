@@ -28,7 +28,7 @@
                         
                     <div id="pesquisa">
                     <input class="form-control mr-sm-2" id="pesquisa-input" type="search" placeholder="Digite um filme" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="button">Pesquisar</button>
+                    <button class="btn btn-outline-warning" id="pesquisaBotao" type="button">Pesquisar</button>
                     </div>
                     
                     <button type="button" class="btn btn-outline-warning" id="entrar">
@@ -68,7 +68,7 @@
                 <ul class="filme_lista">
 
                     <li class="filme">
-                        <img class="img-fluid" src="../img/movies/hereditario.jpg" />
+                        <img class="img-fluid" value="" src="../img/movies/hereditario.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
                                 <a href="#" class="btn-custom-round btn btn-light rounded-circle">
@@ -377,6 +377,12 @@
             </div>
         </section>
     </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  
 
     <footer>
     <div class="rodape">
@@ -384,6 +390,17 @@
     </div>
     </footer>
     <script src="../js/controller/content.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
 </body>
 
 
