@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,7 @@
         <nav class="navbar fixed-top" id="header-nav">
             <div class="container-fluid" id="header-container">
                 <div id="nav-texto">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./content.html">
                         <h3 id="nav-title">R e s i l i a f l i x</h3>
                     </a>
                 </div>
@@ -28,7 +27,7 @@
                         
                     <div id="pesquisa">
                     <input class="form-control mr-sm-2" id="pesquisa-input" type="search" placeholder="Digite um filme" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="button">Pesquisar</button>
+                    <button class="btn btn-outline-warning" id="pesquisaBotao" type="button">Pesquisar</button>
                     </div>
                     
                     <button type="button" class="btn btn-outline-warning" id="entrar">
@@ -67,8 +66,8 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme">
-                        <img class="img-fluid" src="../img/movies/hereditario.jpg" />
+                    <li class="filme" onclick="apiFilme('Hereditary')">
+                        <img class="img-fluid"src="../img/movies/hereditario.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
                                 <a href="#" class="btn-custom-round btn btn-light rounded-circle">
@@ -79,8 +78,8 @@
                         </div>
                     </li>
 
-                    <li class="filme">
-                        <img class="img-fluid" src="../img/movies/madrugada.jpg">
+                    <li class="filme"  onclick="apiFilme('Dawn of the Dead')">
+                        <img class="img-fluid"  src="../img/movies/madrugada.jpg">
                         <div class="filme_info">
                             <div class="col-12">
                                 <a href="#" class="btn-custom-round btn btn-light rounded-circle">
@@ -91,7 +90,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The Exorcism of Emily Rose')">
                         <img class="img-fluid" src="../img/movies/exorcismo.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -104,7 +103,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The ring')">
                         <img class="img-fluid" src="../img/movies/chamado.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -118,7 +117,7 @@
                     </li>
 
                     
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The blair witch')">
                         <img class="img-fluid" src="../img/movies/bruxa.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -148,7 +147,7 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The Expendables')">
                         <img class="img-fluid" src="../img/movies/merce.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -160,7 +159,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Ong-bak')">
                         <img class="img-fluid" src="../img/movies/ongbak.jpg">
                         <div class="filme_info">
                             <div class="col-12">
@@ -172,7 +171,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The Fast and the Furious')">
                         <img class="img-fluid" src="../img/movies/velozes.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -185,7 +184,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The A-Team')">
                         <img class="img-fluid" src="../img/movies/squad.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -199,7 +198,7 @@
                     </li>
 
                     
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Unleashed')">
                         <img class="img-fluid" src="../img/movies/cao.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -229,7 +228,7 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Cars')">
                         <img class="img-fluid" src="../img/movies/carros.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -241,7 +240,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Kung Fu Panda')">
                         <img class="img-fluid" src="../img/movies/panda.jpg">
                         <div class="filme_info">
                             <div class="col-12">
@@ -253,7 +252,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Shrek 2')">
                         <img class="img-fluid" src="../img/movies/shrek2.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -266,7 +265,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Robots')">
                         <img class="img-fluid" src="../img/movies/robos.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -280,7 +279,7 @@
                     </li>
 
                     
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Barnyard')">
                         <img class="img-fluid" src="../img/movies/segredo.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -301,7 +300,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" >
                         <h3 class="text-white"><strong>Drama</strong></h3>
                     </div>
                 </div>
@@ -310,7 +309,7 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Marriage Story')">
                         <img class="img-fluid" src="../img/movies/historia.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -322,7 +321,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Forrest Gump')">
                         <img class="img-fluid" src="../img/movies/forrest.jpg">
                         <div class="filme_info">
                             <div class="col-12">
@@ -334,7 +333,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The Irishman')">
                         <img class="img-fluid" src="../img/movies/irlandes.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -347,7 +346,7 @@
                         </div>
                     </li>
 
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('The Green Mile')">
                         <img class="img-fluid" src="../img/movies/milagre.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -361,7 +360,7 @@
                     </li>
 
                     
-                    <li class="filme">
+                    <li class="filme" onclick="apiFilme('Central do Brasil')">
                         <img class="img-fluid" src="../img/movies/central.jpg" />
                         <div class="filme_info">
                             <div class="col-12">
@@ -377,6 +376,30 @@
             </div>
         </section>
     </div>
+    <div id="infoFilme">
+
+        <div id="poster">
+            
+        </div>
+
+        <div id="infoContainer">
+    
+            <h2 id="tituloFilme"></h2>
+            <h4 id="diretor"></h4>
+            <h4 id="ano"></h4>
+            <h4 id="lancamento"></h4>
+            <h4 id="duracao"></h4>
+            <h4 id="genero"></h4>
+            <h4 id="historia"></h4>
+        
+        </div>
+        
+    </div>
+        
+    
+
+  
+  
 
     <footer>
     <div class="rodape">
@@ -384,6 +407,8 @@
     </div>
     </footer>
     <script src="../js/controller/content.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
 </body>
 
 

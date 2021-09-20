@@ -87,9 +87,20 @@ header{
     height: 50%;
 }
 
-/* só doidera */
 
+
+#infoFilme{
+  display: none;
+  margin: 0;
+  height: 80%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
   
+}
+#infoContainer{
+  width: 30%;
+}
  
   .btn-outline-success:hover {
     background-color: #212f45;
