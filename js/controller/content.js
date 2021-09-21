@@ -41,15 +41,26 @@ async function  apiFilme(filme){
     let url =  `https://www.omdbapi.com/?apikey=${key}&t=${filme}`
     let apiResponse = await fetch(url).then(response => response.json());
    console.log(apiResponse)
-   $('.list-content').css('display', 'none')
-   $('#infoFilme').css('display', 'flex')
-   $('#tituloFilme').html(`${apiResponse.Title}`)
-   $('#diretor').html(`Diretor: ${apiResponse.Director}`)
-   $('#ano').html(`Ano: ${apiResponse.Year}`)
-   $('#lancamento').html(`Lançamento: ${apiResponse.Release}`)
-   $('#duracao').html(`Duração: ${apiResponse.Runtime}`)
-   $('#historia').html(`Sinopse: ${apiResponse.Plot}`)
-   $('#poster').html(`<img src="${apiResponse.Poster}">`)
+   try{
+       if(apiResponse.Title !== undefined){
+        $('.list-content').css('display', 'none')
+        $('#infoFilme').css('display', 'flex')
+        $('#tituloFilme').html(`${apiResponse.Title}`)
+        $('#diretor').html(`Diretor: ${apiResponse.Director}`)
+        $('#ano').html(`Ano: ${apiResponse.Year}`)
+        $('#lancamento').html(`Lançamento: ${apiResponse.Release}`)
+        $('#duracao').html(`Duração: ${apiResponse.Runtime}`)
+        $('#historia').html(`Sinopse: ${apiResponse.Plot}`)
+        $('#poster').html(`<img src="${apiResponse.Poster}">`)
+       } else {
+           throw new Error ('O filme não foi encontrado, nosso buscador funciona apenas com titulos em seu idioma <strong>original</strong>. <br> Tente pesquisar em <strong>inglês.</strong>')
+       }
+    }catch(error){
+        $('.list-content').css('display', 'none')
+        $('#infoFilme').css('display', 'flex')
+        $('#tituloFilme').html(`${error}`)
+   }
+   
   
 }
 
