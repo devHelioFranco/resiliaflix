@@ -46,25 +46,19 @@ $('#meuCep').on('change', async function(){
    const url = `https://viacep.com.br/ws/${cep}/json/`
    let apiResponse = await fetch(url).then(response => response.json());
    console.log(apiResponse)
-
-   $('#estado').val(`${apiResponse.uf}`)
-   $('#bairro').val(`${apiResponse.bairro}`)
-   $('#rua').val(`${apiResponse.logradouro}`)
+   renderiza(apiResponse)
+  
 })
 
 $("#submit").click(function(){
     try{
         if(usuario.indexOf('@') > -1 && password.length > 5){
-            $("#concluido").css('display', 'block')
-            $(".form-group").css('display', 'none')
-            $("#submit").css('display', 'none')
-            $("#titulo-field").css('display', 'none')
-            $("body").css('height', '100%')
+            cadastroConcluido()
         } else {
             throw new Error ('Insira os dados corretamente')
         }
     } catch(error){
-        $('#titulo-field').html(`${error}`)
+        erro(error)
     }
     
 });
