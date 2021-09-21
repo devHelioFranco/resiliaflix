@@ -42,13 +42,13 @@ cadastro.addEventListener('change', ()=>{
 })
 
 $('#meuCep').on('change', async function(){
-   let cep = document.getElementById('meuCep').value
-   const url = `https://viacep.com.br/ws/${cep}/json/`
-   let apiResponse = await fetch(url).then(response => response.json());
-   console.log(apiResponse)
-   renderiza(apiResponse)
-  
-})
+    let cep = document.getElementById('meuCep').value
+    const url = `https://viacep.com.br/ws/${cep}/json/`
+    let apiResponse = await fetch(url).then(response => response.json());
+    console.log(apiResponse)
+    renderiza(apiResponse)
+   
+ })
 
 $("#submit").click(function(){
     try{
