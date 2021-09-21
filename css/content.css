@@ -187,3 +187,64 @@ header{
     -webkit-box-shadow: 7px 8px 4px -1px rgba(250,208,0,0.63); 
 box-shadow: 7px 8px 4px -1px rgba(250,208,0,0.63);
   }
+
+  @media (max-width:900px) {
+    body{
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+    #header-nav{
+        flex-direction: column;
+        position: static;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #nav-container{
+        flex-direction: column;
+    }
+    #nav-buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+    #contentMain{
+        height: auto;
+    }
+    .filme_lista{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .filme{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+    .filme:first-child{
+      margin: 0%;
+    }
+    .row{
+      padding-top: 50px !important;
+    }
+  
+  .rodape{
+    
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #infoFilme {
+    margin-top: 10%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  #infoContainer{
+    width: 80%;
+    text-align: center;
+  }
+}
