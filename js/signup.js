@@ -53,9 +53,18 @@ $('#meuCep').on('change', async function(){
 })
 
 $("#submit").click(function(){
-    $("#concluido").css('display', 'block')
-    $(".form-group").css('display', 'none')
-    $("#submit").css('display', 'none')
-    $("#titulo-field").css('display', 'none')
-    $("body").css('height', '100%')
+    try{
+        if(usuario.indexOf('@') > -1 && password.length > 5){
+            $("#concluido").css('display', 'block')
+            $(".form-group").css('display', 'none')
+            $("#submit").css('display', 'none')
+            $("#titulo-field").css('display', 'none')
+            $("body").css('height', '100%')
+        } else {
+            throw new Error ('Insira os dados corretamente')
+        }
+    } catch(error){
+        $('#titulo-field').html(`${error}`)
+    }
+    
 });
