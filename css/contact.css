@@ -78,6 +78,10 @@ strong{
     transform: scale(1.2);
     transition: 1s;
 }
+.img{
+    height: 200px;
+    width: 200px;
+}
 @media (max-width:900px) {
     body{
     height: 100%;
