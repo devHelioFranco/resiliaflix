@@ -1,4 +1,4 @@
-
+  
 let filme = ''
 // Manipula input e chama requisição API
 var botao = document.getElementById('pesquisaBotao')
